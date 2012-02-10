@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pconfig xmlns="http://www.cell-life.org/schemas/pconfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cell-life.org/schemas/pconfig http://www.cell-life.org/schemas/pconfig/pconfig-1.0.xsd">
+	<id>entity_demo</id>
+	<label>Entity Demo report</label>
+	<resource>genericparametersreport.jasper</resource>
+	<parameters>
+		<entity	name="integerparam"	valueType="Integer" defaultValue="17"/>
+		<entity name="longparam" valueType="Long" defaultValue="19"/>
+		<entity name="doubleparam" valueType="Double" defaultValue="3.7"/>
+		<entity name="boolparam" valueType="Boolean" defaultValue="true"/>
+	</parameters>
+</pconfig>

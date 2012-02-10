@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns="http://www.cell-life.org/schemas/reporting"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cell-life.org/schemas/reporting http://www.cell-life.org/schemas/reporting/reporting-1.0.xsd">
+	<label>Test report</label>
+	<resource>path/to/reportfile.jasper</resource>
+	<parameters>
+		<date label="Start date" name="startDate" allowPast="true"	allowFuture="false" 
+			tooltip="date tooltip"/>
+		<integer label="Ingeger param" name="integer-param" max="10" defaultValue="17" />
+		<text label="Mobilie number" name="msisdn" regex="^27[1-9][0-9]{8}$"
+			errorMessage="Regex error message" defaultValue="nullValue" />
+		<entity entityClass="org.celllife.pconfig.model.Pconfig" label="Entity param" 
+			name="entity-param"	displayProperty="name" valueProperty="id" valueType="Integer"
+			searchFields="name,id" defaultValue="%"/>
+		<boolean label="Include test data" name="include-test" defaultValue="true" />
+		<label label="Note" value="this a a note" />
+	</parameters>
+	<properties>
+        <map>
+            <test-key2>test value2</test-key2>
+            <test-key1>test value1</test-key1>
+        </map>
+    </properties>
+</report>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pconfig xmlns="http://www.cell-life.org/schemas/pconfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cell-life.org/schemas/pconfig http://www.cell-life.org/schemas/pconfig/pconfig-1.0.xsd">
+	<id>demo</id>
+	<label>Demo report</label>
+	<resource>genericparametersreport.jasper</resource>
+	<parameters>
+		<date label="Date" name="dateparam" />
+		<integer label="Integer" name="integerparam" max="10" />
+		<text label="String" name="stringparam"/>
+		<boolean label="Boolean" name="boolparam" />
+	</parameters>
+</pconfig>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pconfig xmlns="http://www.cell-life.org/schemas/pconfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cell-life.org/schemas/pconfig http://www.cell-life.org/schemas/pconfig/pconfig-1.0.xsd">
+	<id>report3</id>
+	<label>Test report 2</label>
+	<resource>path/to/reportfile.jasper</resource>
+	<parameters>
+		<date label="Start date" name="startDate" allowPast="true"	allowFuture="false" />
+		<integer label="Ingeger param" name="integer-param" max="10" />
+		<text label="Mobilie number" name="msisdn" regex="^27[1-9][0-9]{8}$" errorMessage="Regex error message" />
+		<entity entityClass="org.celllife.pconfiging.model.Report" label="Entity param" name="entity-param"/>
+		<boolean label="Include test data" name="include-test"/>
+	</parameters>
+	<properties>
+        <map>
+            <test-key2>value2</test-key2>
+            <test-key3>value3</test-key3>
+        </map>
+    </properties>
+</pconfig>
